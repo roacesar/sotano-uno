@@ -48,17 +48,23 @@ h2 {
 
 .projects {
     display: flex;
-    align-items: start;
+    flex-wrap: wrap;
+}
+
+.ind-project {
+    width: 50%;
 }
 
 .ind-project h2 {
     margin: 32px 124px;
+    width: auto;
 }
 
 .ind-project p {
     font-size: 16px;
     line-height: 24px;
     margin: 0 124px 48px 124px;
+    width: auto;
 }
 
 .services {
@@ -90,7 +96,7 @@ h2 {
 
 .cover01 {
     height: 300px;
-    width: auto;
+    width: 100%;
     background-image: url(../images/cover-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +105,7 @@ h2 {
 
 .cover02 {
     height: 300px;
-    width: auto;
+    width: 100%;
     background-image: url(../images/cover-02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,9 +164,16 @@ header nav ul {
     gap: 32px;
 }
 
-/*------------------------------ Header Bootstrap ------------------------------*/
+.checkbtn {
+    font-size: 24px;
+    color: #161616;
+    display: none;
+    cursor: pointer;
+}
 
-
+#check {
+    display: none;
+}
 
 /*------------------------------ Main ------------------------------*/
 
@@ -338,4 +351,164 @@ footer .footer-right {
     display: flex;
     align-items: center;
     gap: 48px;
+}
+
+/*------------------------------ MEDIA ------------------------------*/
+
+@media screen and (max-width: 900px) {
+    .projects {
+        
+    }
+    
+    .ind-project {
+        width: 100%;
+    }
+
+    .ind-project h2 {
+        margin: 32px 62px;
+        width: auto;
+    }
+    
+    .ind-project p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 62px 48px 62px;
+        width: auto;
+    }
+
+    main .desc-home {
+        background-color: #F5F5F5;
+        padding: 62px;
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+
+    main .desc-home h1 {
+        font-size: 48px;
+        font-weight: 600;
+        width: 100%;
+    }
+    
+    main .desc-home p {
+        font-size: 20px;
+        line-height: 36px;
+        width: 100%;
+    }
+
+    footer {
+        background-color: #F5F5F5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px 48px;
+        flex-wrap: wrap;
+    }
+    
+    footer .footer-left {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 48px;
+        justify-content: center;
+    }
+    
+    footer .footer-right {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 48px;
+        justify-content: center;
+    }
+
+    main .desc-general {
+        padding: 62px 62px;
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+    
+    main .desc-general h1 {
+        font-size: 48px;
+        font-weight: 600;
+        width: 100%;
+    }
+    
+    main .desc-general p {
+        font-size: 20px;
+        line-height: 36px;
+        width: 100%;
+    }
+
+    .services {
+        display: flex;
+        padding: 0 62px;
+        flex-wrap: wrap;
+    }
+    
+    .ind-service {
+        border: 1px solid #F5F5F5;
+        padding: 32px;
+        width: 100%;
+    }
+    
+    .ind-service:hover {
+        background-color: #F5F5F5;
+    }
+    
+    .ind-service p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 24px 0 0 0;
+    }
+    
+    .ind-service h2 {
+        margin: 0;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    header {
+        background: #ffffff;
+        border-bottom: 1px solid #dddddd;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 32px
+    }
+    
+    header nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #B0F954;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 50% 0;
+        line-height: 30px;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    header nav ul li a:hover {
+        text-decoration: line-through;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+    
+    #check:checked ~ header nav ul {
+        left: 0;
+    }
 }
