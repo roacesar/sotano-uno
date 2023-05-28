@@ -1,0 +1,37 @@
+position: relative se utiliza para mover un elemento de su posición original, pero sin cambiar el flujo de la página. Es decir, el espacio que ocupa el elemento en la página se mantiene, aunque se pueda mover de su posición original. Por ejemplo:
+
+.container {
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+En este ejemplo, el elemento con la clase .container se mueve 50 píxeles hacia la derecha y 50 píxeles hacia abajo desde su posición original. Sin embargo, el resto de los elementos en la página no se moverán para llenar el espacio dejado por este elemento.
+
+
+
+-----------------------------------
+
+
+
+position:absolute se utiliza para posicionar un elemento en una posición específica en la página, independientemente del resto de los elementos. Es decir, el espacio que ocupa el elemento no afectará a la posición de los otros elementos en la página. Por ejemplo:
+
+.container {
+  position: relative;
+}
+
+.elemento {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+En este ejemplo, el elemento con la clase .elemento se posiciona 100 píxeles hacia abajo y 100 píxeles hacia la derecha desde su elemento padre (el elemento con la clase .container). Los otros elementos en la página no se moverán para llenar el espacio dejado por este elemento.
+
+
+
+------------
+
+
+
+el position relative es relativo a si mismo.. pero el absolut es relativo a su contenedor padre..

@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+ } 
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #161616;
+}
+
+a {
+    text-decoration: none;
+    color: #161616;
+}
+
+a:hover {
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.currentpage {
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.icon24 {
+    height: 24px;
+    width: 24px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.projects {
+    display: flex;
+    align-items: start;
+}
+
+.ind-project h2 {
+    margin: 32px 124px;
+}
+
+.ind-project p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 124px 48px 124px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 0 124px;
+    margin-bottom: 48px;
+}
+
+.ind-service {
+    border: 1px solid #F5F5F5;
+    padding: 48px;
+}
+
+.ind-service:hover {
+    background-color: #F5F5F5;
+}
+
+.ind-service p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 24px 0 0 0;
+}
+
+.ind-service h2 {
+    margin: 0;
+}
+
+.cover01 {
+    height: 300px;
+    width: auto;
+    background-image: url(../images/cover-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cover02 {
+    height: 300px;
+    width: auto;
+    background-image: url(../images/cover-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cover03 {
+    height: 300px;
+    width: auto;
+    background-image: url(../images/cover-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cover04 {
+    height: 300px;
+    width: auto;
+    background-image: url(../images/cover-04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.button {
+    background-color: #B0F954;
+    height: 56px;
+    border-radius: 28px;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0 24px 0 32px;
+    margin: 48px auto;
+}
+
+/*------------------------------ Header ------------------------------*/
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px
+}
+
+header nav ul {
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/*------------------------------ Header Bootstrap ------------------------------*/
+
+
+
+/*------------------------------ Main ------------------------------*/
+
+main .slider-home {
+    background-color: #F5F5F5;
+    background-image: url(../images/slider-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+main .slider-nosotros {
+    background-color: #F5F5F5;
+    background-image: url(../images/slider-nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+main .slider-work {
+    background-color: #F5F5F5;
+    background-image: url(../images/slider-work.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+main .slider-servicios {
+    background-color: #F5F5F5;
+    background-image: url(../images/slider-servicios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+main .slider-contacto {
+    background-color: #F5F5F5;
+    background-image: url(../images/slider-contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+
+main .desc-home {
+    background-color: #F5F5F5;
+    padding: 48px 124px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+main .desc-home h1 {
+    font-size: 48px;
+    font-weight: 600;
+    order: 0;
+    flex: none;
+    flex-grow: 0;
+}
+
+main .desc-home p {
+    font-size: 20px;
+    line-height: 36px;
+    order: 1;
+    flex-grow: 1;
+}
+
+main .recent {
+    padding: 48px 0;
+}
+
+main .recent h1 {
+    margin: 48px auto;
+    text-align: center;
+}
+
+main .content {
+    padding: 76px;
+}
+
+main .content h1,h2,p {
+    margin: 48px 0;
+}
+
+main .content p {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+main .desc-general {
+    padding: 48px 124px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+main .desc-general h1 {
+    font-size: 48px;
+    font-weight: 600;
+    order: 0;
+    flex: none;
+    flex-grow: 0;
+}
+
+main .desc-general p {
+    font-size: 20px;
+    line-height: 36px;
+    order: 1;
+    flex-grow: 1;
+}
+
+/*------------------------------ Contacto ------------------------------*/
+
+main form {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 0 124px;
+}
+
+main form article {
+    width: 50%;
+    row-gap: 16px;
+}
+
+main form .input-01 {
+    border: 1px solid #F5F5F5;
+    height: 56px;
+    border-radius: 28px;
+    font-size: 16px;
+    padding: 0 32px;
+}
+
+main form .input-02 {
+    border: 1px solid #F5F5F5;
+    height: 56px;
+    border-radius: 28px;
+    font-size: 16px;
+    padding: 0 32px;
+}
+
+main form .input-03 {
+    background-color: #B0F954;
+    height: 56px;
+    border: none;
+    border-radius: 28px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 32px;
+}
+
+/*------------------------------ Footer ------------------------------*/
+
+footer {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 48px
+}
+
+footer .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+footer .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
